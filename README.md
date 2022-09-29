@@ -19,8 +19,7 @@ Microservice-Based Ecommerce Application, with functionality to search products,
 
 # Project Architecture
 
-<img src="https://user-images.githubusercontent.com/59741887/192603781-9c831775-dd8a-41b8-905c-3603d010accc.PNG" width="870" height="500"/>
-
+![Facebook API drawio(1)](https://user-images.githubusercontent.com/59741887/193088250-e46a017b-0670-4a2e-bb6f-5d44506ec3f6.png)
 
 ###  Product Service
 Contains Products details and customer reviews and rating.  
