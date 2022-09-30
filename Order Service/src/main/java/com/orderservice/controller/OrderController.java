@@ -73,4 +73,17 @@ public class OrderController {
         URI uri = new URI("http://localhost:8082/customer/"+custId+"/order/"+orders.getOrderId());
         return new ResponseEntity(uri, HttpStatus.CREATED);
     }
+
+    @DeleteMapping("/customer/{custId}/order/{orderId}")
+    public ResponseEntity cancelOrder(@PathVariable("custId") String custId,
+                                      @PathVariable("orderId") String orderId) {
+        if(OrderStatus.DELIVERED != repository.findById(orderId).get().getOrderStatus()) {
+            repository.deleteById(orderId);
+            return new ResponseEntity("Order Cancelled", HttpStatus.OK);
+        }
+        else {
+            return new ResponseEntity("Order is already delivered", HttpStatus.OK);
+        }
+
+    }
 }

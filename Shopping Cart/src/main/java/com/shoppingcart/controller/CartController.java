@@ -41,7 +41,7 @@ public class CartController {
     }
 
     @CircuitBreaker(name="instanceA", fallbackMethod = "fallbackAddCartItem")
-    @PostMapping("/customer/{custId}/cartItem/{item}")
+    @PostMapping("/customer/{custId}/cart-item/{item}")
     public ResponseEntity addProductToCart(@PathVariable("custId") String custId
             ,@PathVariable("item") String item, @RequestParam(value = "quantity", defaultValue = "1") Integer quantity) {
         Product product = restTemplate.getForObject("http://product-service/product/" + item, Product.class);
