@@ -4,9 +4,6 @@ Microservice-Based Ecommerce Application, with functionality to search products,
 * Technologies used 
 * Project Overview
 * Project Architecture
-* 
-* 
-
 
 # Technologies used
 * Java
