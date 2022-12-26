@@ -1,4 +1,4 @@
-# Ecommerce-Website
+# Ecommerce-Application
 Microservice-Based Ecommerce Application, with functionality to search products, add to cart, checkout, and track the shipment.
 # Table of Contents
 * Technologies used 
